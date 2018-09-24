@@ -1,0 +1,50 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  font-family: Verdana, sans-serif; }
+
+h1 {
+  margin: auto;
+  padding-top: 30px;
+  text-align: center; }
+
+dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  dl dt.ComponentAccordion-title {
+    width: 100%;
+    padding: 20px 10px;
+    margin: auto;
+    margin: 10px 0;
+    text-align: center;
+    background-color: yellow;
+    letter-spacing: 5px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    dl dt.ComponentAccordion-title:hover {
+      background-color: #bbbbbb; }
+    dl dt.ComponentAccordion-title.is-active {
+      background-color: #EEEEEE; }
+      dl dt.ComponentAccordion-title.is-active:hover {
+        background-color: #bbbbbb; }
+  dl dd.ComponentAccordion-content {
+    padding: 0 20px;
+    color: #000;
+    max-height: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    -webkit-transition: max-height 0.2s ease-in-out;
+    transition: max-height 0.2s ease-in-out; }
+    dl dd.ComponentAccordion-content.is-deployed {
+      max-height: inherit; }

@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+}
+
+h1 {
+    margin: auto;
+    padding-top: 30px;
+    text-align: center;
+}
+
+dl {
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    flex-direction: column;
+
+    dt.ComponentAccordion-title {
+        width: 100%;
+        padding: 20px 10px;
+        margin: auto;
+        margin: 10px 0;
+        text-align: center;
+        background-color: yellow;
+        letter-spacing: 5px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            background-color: #bbbbbb;
+        }
+        &.is-active {
+          background-color: #EEEEEE;
+          &:hover {
+              background-color: #bbbbbb;
+          }
+        }
+    }
+    dd.ComponentAccordion-content {
+        padding: 0 20px;
+        color: #000;
+        max-height: 0;
+        overflow: hidden;
+        margin: 0 auto;
+        transition: max-height 0.2s ease-in-out;
+        &.is-deployed {
+          max-height: inherit;
+        }
+    }
+}
